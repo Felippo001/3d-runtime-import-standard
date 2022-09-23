@@ -1,0 +1,75 @@
+{
+    "armStretch": 0,
+    "feetSpacing": 0,
+    "legStretch": 0,
+    "lowerArmTwist": 0,
+    "lowerLegTwist": 0,
+    "upperArmTwist": 0,
+    "upperLegTwist": 0,
+    "hasTranslationDoF": false,
+    "bones": {
+        "Hips": {
+            "boneName": "spine"
+        },
+        "LeftUpperLeg": {
+            "boneName": "thigh.L"
+        },
+        "RightUpperLeg": {
+            "boneName": "thigh.R"
+        },
+        "LeftLowerLeg": {
+            "boneName": "shin.L"
+        },
+        "RightLowerLeg": {
+            "boneName": "shin.R"
+        },
+        "LeftFoot": {
+            "boneName": "foot.L"
+        },
+        "RightFoot": {
+            "boneName": "foot.R"
+        },
+        "Spine": {
+            "boneName": "spine.001"
+        },
+        "Neck": {
+            "boneName": "spine.004"
+        },
+        "Head": {
+            "boneName": "spine.005"
+        },
+        "LeftShoulder": {
+            "boneName": "shoulder.L"
+        },
+        "RightShoulder": {
+            "boneName": "shoulder.R"
+        },
+        "LeftUpperArm": {
+            "boneName": "upper_arm.L"
+        },
+        "RightUpperArm": {
+            "boneName": "upper_arm.R"
+        },
+        "LeftLowerArm": {
+            "boneName": "forearm.L"
+        },
+        "RightLowerArm": {
+            "boneName": "forearm.R"
+        },
+        "LeftHand": {
+            "boneName": "hand.L"
+        },
+        "RightHand": {
+            "boneName": "hand.R"
+        },
+        "LeftToes": {
+            "boneName": "toe.L"
+        },
+        "RightToes": {
+            "boneName": "toe.R"
+        },
+        "RightEye": {
+            "boneName": "spine.006"
+        }
+    }
+}
