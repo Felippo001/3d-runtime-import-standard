@@ -1,0 +1,141 @@
+{
+    "url": "",
+    "CenterOfMass": "Empty.CenterGravity",
+    "CageColliders": [
+        {
+            "objectName": "Empty.Collider.Body",
+            "mesh": {
+                "src": [
+                    "https://github.com/Felippo001/3d-runtime-import",
+                    "-standard/raw/main/hydraCollider/CageCollider.json"
+                ]
+            }
+        }
+    ],
+    "Seats": [
+        {
+            "objectName": "Empty.Seat"
+        }
+    ],
+    "Wheels": [
+        {
+            "info": "frontLeft",
+            "wheel": "Hydra.Wheel.Ft.L.002",
+            "center": "Empty.WheelCenter.Ft.L.02",
+            "innerCenter": "Empty.WheelInnerCenter.Ft.L.02",
+            "ground": "Empty.WheelGround.Ft.L.02",
+            "innerGround": "Empty.WheelWidth.Ft.L.02",
+            "suspensionMin": "Empty.Suspension.Min.Ft.L.02",
+            "suspensionMax": "Empty.Suspension.Max.Ft.L.02",
+            "mass": 30,
+            "steering": true,
+            "steeringAngle": 30,
+            "motorTorque": 100
+        },
+        {
+            "info": "frontRight",
+            "wheel": "Hydra.Wheel.Ft.R.002",
+            "center": "Empty.WheelCenter.Ft.R.02",
+            "innerCenter": "Empty.WheelInnerCenter.Ft.R.02",
+            "ground": "Empty.WheelGround.Ft.R.02",
+            "innerGround": "Empty.WheelWidth.Ft.R.02",
+            "suspensionMin": "Empty.Suspension.Min.Ft.R.02",
+            "suspensionMax": "Empty.Suspension.Max.Ft.R.02",
+            "mass": 30,
+            "steering": true,
+            "steeringAngle": 30,
+            "motorTorque": 100
+        },
+        {
+            "info": "backLeft",
+            "wheel": "Hydra.Wheel.Bk.L.002",
+            "center": "Empty.WheelCenter.Bk.L.02",
+            "innerCenter": "Empty.WheelInnerCenter.Bk.L.02",
+            "ground": "Empty.WheelGround.Bk.L.02",
+            "innerGround": "Empty.WheelWidth.Bk.L.02",
+            "suspensionMin": "Empty.Suspension.Min.Bk.L.02",
+            "suspensionMax": "Empty.Suspension.Max.Bk.L.02",
+            "mass": 30,
+            "motorTorque": 100
+        },
+        {
+            "info": "backRight",
+            "wheel": "Hydra.Wheel.Bk.R.002",
+            "center": "Empty.WheelCenter.Bk.R.02",
+            "innerCenter": "Empty.WheelInnerCenter.Bk.R.02",
+            "ground": "Empty.WheelGround.Bk.R.02",
+            "innerGround": "Empty.WheelWidth.Bk.R.02",
+            "suspensionMin": "Empty.Suspension.Min.Bk.R.02",
+            "suspensionMax": "Empty.Suspension.Max.Bk.R.02",
+            "mass": 30,
+            "motorTorque": 100
+        }
+    ],
+    "LookAtObjectName": "Empty.lookAt",
+    "ScriptedObjects": [
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.lookAt",
+                        "position": {
+                            "x": 0,
+                            "y": 0.57,
+                            "z": -1.091
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "Hydra.AeroDisc.Ft.L.02",
+            "scripts": [
+                {
+                    "scriptName": "RotateAxisWithWheelColliderScript",
+                    "scriptValues": {
+                        "wheelObject": "Hydra.Wheel.Ft.L.002",
+                        "axis": "y"
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "Hydra.WheelBrake.Ft.L.002",
+            "scripts": [
+                {
+                    "scriptName": "RotateAxisWithWheelColliderScript",
+                    "scriptValues": {
+                        "wheelObject": "Hydra.Wheel.Ft.L.002",
+                        "axis": "y"
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "Hydra.AeroDisc.Ft.R.02",
+            "scripts": [
+                {
+                    "scriptName": "RotateAxisWithWheelColliderScript",
+                    "scriptValues": {
+                        "wheelObject": "Hydra.Wheel.Ft.R.002",
+                        "axis": "y"
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "Hydra.WheelBrake.Ft.R.002",
+            "scripts": [
+                {
+                    "scriptName": "RotateAxisWithWheelColliderScript",
+                    "scriptValues": {
+                        "wheelObject": "Hydra.Wheel.Ft.R.002",
+                        "axis": "y"
+                    }
+                }
+            ]
+        }
+    ]
+}
