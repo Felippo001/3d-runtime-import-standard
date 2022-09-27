@@ -90,6 +90,64 @@
             ]
         },
         {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.CenterGravity",
+                        "position": [
+                            0,
+                            -0.306912571,
+                            -1.03330576
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Collider.Body",
+                        "rotation": [
+                            0,
+                            270,
+                            0
+                        ],
+                        "scale": [
+                            1.00584006,
+                            1.00584018,
+                            1.00584006
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Seat",
+                        "position": [
+                            0,
+                            -0.193407208,
+                            -0.882125556
+                        ],
+                        "scale": [
+                            0.44691056,
+                            0.44691056,
+                            0.44691056
+                        ]
+                    }
+                }
+            ]
+        },
+        {
             "objectName": "Hydra.AeroDisc.Ft.L.02",
             "scripts": [
                 {
