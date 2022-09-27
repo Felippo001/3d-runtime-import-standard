@@ -117,6 +117,54 @@
             ]
         },
         {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.CenterGravity",
+                        "position": [
+                            0,
+                            0.133952543,
+                            -1.332362
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Seat",
+                        "position": [
+                            -0.287028074,
+                            0.39547196,
+                            -1.57193887
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Collider.Body",
+                        "scale": [
+                            1.29648793,
+                            1.29648793,
+                            1.29648793
+                        ]
+                    }
+                }
+            ]
+        },
+        {
             "objectName": "Cube",
             "scripts": [
                 {
