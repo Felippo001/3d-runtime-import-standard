@@ -30,7 +30,7 @@
             "mass": 30,
             "steering": true,
             "steeringAngle": 30,
-            "motorTorque": 100
+            "motorTorque": 400
         },
         {
             "info": "frontRight",
@@ -44,7 +44,7 @@
             "mass": 30,
             "steering": true,
             "steeringAngle": 30,
-            "motorTorque": 100
+            "motorTorque": 400
         },
         {
             "info": "backLeft",
@@ -56,7 +56,7 @@
             "suspensionMin": "Empty.Suspension.Min.Bk.L.02",
             "suspensionMax": "Empty.Suspension.Max.Bk.L.02",
             "mass": 30,
-            "motorTorque": 100
+            "motorTorque": 400
         },
         {
             "info": "backRight",
@@ -68,7 +68,7 @@
             "suspensionMin": "Empty.Suspension.Min.Bk.R.02",
             "suspensionMax": "Empty.Suspension.Max.Bk.R.02",
             "mass": 30,
-            "motorTorque": 100
+            "motorTorque": 400
         }
     ],
     "LookAtObjectName": "Empty.lookAt",
