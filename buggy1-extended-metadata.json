@@ -6,17 +6,35 @@
             "objectName": "Empty.Collider.Body",
             "mesh": {
                 "src": [
-                    "https://github.com/Felippo001/3d-runtime-import",
-                    "-standard/raw/main/hydraCollider/CageCollider.json"
+                    "https://raw.githubusercontent.com/Felippo001/3d-",
+                    "runtime-import-standard/main/buggyCollider/CageCollider.json"
                 ]
             }
         },
         {
-            "objectName": "Empty.Collider.Spoiler.01",
+            "objectName": "Empty.Collider.ShockF",
             "mesh": {
                 "src": [
-                    "https://github.com/Felippo001/3d-runtime-import",
-                    "-standard/raw/main/hydraCollider/Spoiler01.json"
+                    "https://raw.githubusercontent.com/Felippo001/3d-runtime",
+                    "-import-standard/main/buggyCollider/ShockF.json"
+                ]
+            }
+        },
+        {
+            "objectName": "Empty.Collider.ShockR",
+            "mesh": {
+                "src": [
+                    "https://raw.githubusercontent.com/Felippo001/3d-runtime",
+                    "-import-standard/main/buggyCollider/ShockR.json"
+                ]
+            }
+        },
+        {
+            "objectName": "Empty.Collider.Container.01",
+            "mesh": {
+                "src": [
+                    "https://github.com/Felippo001/3d-runtime-impo",
+                    "rt-standard/raw/main/buggyCollider/Wheels01.Container01.json"
                 ]
             }
         }
@@ -28,56 +46,56 @@
     ],
     "Wheels": [
         {
-            "info": "frontLeft",
-            "wheel": "Hydra.Wheel.Ft.L.01",
+            "wheel": "ROCKHODLER.Wheel.Ft.L.01",
             "center": "Empty.WheelCenter.Ft.L.01",
             "innerCenter": "Empty.WheelInnerCenter.Ft.L.01",
             "ground": "Empty.WheelGround.Ft.L.01",
             "innerGround": "Empty.WheelWidth.Ft.L.01",
             "suspensionMin": "Empty.Suspension.Min.Ft.L.01",
             "suspensionMax": "Empty.Suspension.Max.Ft.L.01",
-            "mass": 30,
+            "mass": 50,
             "steering": true,
-            "steeringAngle": 30,
-            "motorTorque": 100
+            "steeringAngle": 35,
+            "motorTorque": 200,
+            "useInner": true
         },
         {
-            "info": "frontRight",
-            "wheel": "Hydra.Wheel.Ft.R.01",
+            "wheel": "ROCKHODLER.Wheel.Ft.R.01",
             "center": "Empty.WheelCenter.Ft.R.01",
             "innerCenter": "Empty.WheelInnerCenter.Ft.R.01",
             "ground": "Empty.WheelGround.Ft.R.01",
             "innerGround": "Empty.WheelWidth.Ft.R.01",
             "suspensionMin": "Empty.Suspension.Min.Ft.R.01",
             "suspensionMax": "Empty.Suspension.Max.Ft.R.01",
-            "mass": 30,
+            "mass": 50,
             "steering": true,
-            "steeringAngle": 30,
-            "motorTorque": 100
+            "steeringAngle": 35,
+            "motorTorque": 200,
+            "useInner": true
         },
         {
-            "info": "backLeft",
-            "wheel": "Hydra.Wheel.Bk.L.01",
+            "wheel": "ROCKHODLER.Wheel.Bk.L.01",
             "center": "Empty.WheelCenter.Bk.L.01",
             "innerCenter": "Empty.WheelInnerCenter.Bk.L.01",
             "ground": "Empty.WheelGround.Bk.L.01",
             "innerGround": "Empty.WheelWidth.Bk.L.01",
             "suspensionMin": "Empty.Suspension.Min.Bk.L.01",
             "suspensionMax": "Empty.Suspension.Max.Bk.L.01",
-            "mass": 30,
-            "motorTorque": 100
+            "mass": 50,
+            "motorTorque": 200,
+            "useInner": true
         },
         {
-            "info": "backRight",
-            "wheel": "Hydra.Wheel.Bk.R.01",
+            "wheel": "ROCKHODLER.Wheel.Bk.R.01",
             "center": "Empty.WheelCenter.Bk.R.01",
             "innerCenter": "Empty.WheelInnerCenter.Bk.R.01",
             "ground": "Empty.WheelGround.Bk.R.01",
             "innerGround": "Empty.WheelWidth.Bk.R.01",
             "suspensionMin": "Empty.Suspension.Min.Bk.R.01",
             "suspensionMax": "Empty.Suspension.Max.Bk.R.01",
-            "mass": 30,
-            "motorTorque": 100
+            "mass": 50,
+            "motorTorque": 150,
+            "useInner": true
         }
     ],
     "LookAtObjectName": "Empty.lookAt",
@@ -91,57 +109,635 @@
                         "emptyObjectName": "Empty.lookAt",
                         "position": {
                             "x": 0,
-                            "y": 0.57,
-                            "z": -1.091
+                            "y": 1.22,
+                            "z": -1.51
                         }
                     }
                 }
             ]
         },
         {
-            "objectName": "Hydra.AeroDisc.Ft.L.01",
+            "objectName": "Cube",
             "scripts": [
                 {
                     "scriptName": "RotateAxisWithWheelColliderScript",
                     "scriptValues": {
-                        "wheelObject": "Hydra.Wheel.Ft.L.01",
-                        "axis": "y"
+                        "wheelObject": "ROCKHODLER.Wheel.Ft.L.01",
+                        "axis": "z",
+                        "multiplier": -7.5
                     }
                 }
             ]
         },
         {
-            "objectName": "Hydra.WheelBrake.Ft.L.01",
+            "objectName": "ROOT",
             "scripts": [
                 {
-                    "scriptName": "RotateAxisWithWheelColliderScript",
+                    "scriptName": "CreateEmptyObjectScript",
                     "scriptValues": {
-                        "wheelObject": "Hydra.Wheel.Ft.L.01",
-                        "axis": "y"
+                        "emptyObjectName": "Empty.Collider.Container.01",
+                        "position": [
+                            0,
+                            0.9010745,
+                            -2.37198114
+                        ],
+                        "scale": [
+                            0.2503127,
+                            0.2389735,
+                            0.341250658
+                        ]
                     }
                 }
             ]
         },
         {
-            "objectName": "Hydra.AeroDisc.Ft.R.01",
+            "objectName": "ROOT",
             "scripts": [
                 {
-                    "scriptName": "RotateAxisWithWheelColliderScript",
+                    "scriptName": "CreateEmptyObjectScript",
                     "scriptValues": {
-                        "wheelObject": "Hydra.Wheel.Ft.R.01",
-                        "axis": "y"
+                        "emptyObjectName": "Empty.Suspension.Max.Bk.L.01",
+                        "position": [
+                            -0.6940244,
+                            0.412646443,
+                            -2.81709576
+                        ]
                     }
                 }
             ]
         },
         {
-            "objectName": "Hydra.WheelBrake.Ft.R.01",
+            "objectName": "ROOT",
             "scripts": [
                 {
-                    "scriptName": "RotateAxisWithWheelColliderScript",
+                    "scriptName": "CreateEmptyObjectScript",
                     "scriptValues": {
-                        "wheelObject": "Hydra.Wheel.Ft.R.01",
-                        "axis": "y"
+                        "emptyObjectName": "Empty.Suspension.Max.Bk.R.01",
+                        "position": [
+                            0.694024,
+                            0.412646443,
+                            -2.81709576
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Suspension.Max.Ft.L.01",
+                        "position": [
+                            -0.697849452,
+                            0.419697165,
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Suspension.Max.Ft.R.01",
+                        "position": [
+                            0.697849,
+                            0.419697165,
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Suspension.Min.Bk.L.01",
+                        "position": [
+                            -0.830964744,
+                            0.08279013,
+                            -2.81709576
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Suspension.Min.Bk.R.01",
+                        "position": [
+                            0.830965,
+                            0.08279013,
+                            -2.81709576
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Suspension.Min.Ft.L.01",
+                        "position": [
+                            -0.8319577,
+                            0.0748474,
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Suspension.Min.Ft.R.01",
+                        "position": [
+                            0.831958,
+                            0.0748474,
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Wheel.Collider.Bk.L.01",
+                        "position": [
+                            -0.856917,
+                            0.01881799,
+                            -2.81709576
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            90
+                        ],
+                        "scale": [
+                            0.528449357,
+                            0.201183811,
+                            0.528449357
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Wheel.Collider.Bk.R.01",
+                        "position": [
+                            0.856917,
+                            0.0188179053,
+                            -2.81709576
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            90
+                        ],
+                        "scale": [
+                            0.528449357,
+                            0.201183811,
+                            0.528449357
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Wheel.Collider.Ft.L.01",
+                        "position": [
+                            -0.8569171,
+                            0.0136897312,
+                            -0.000178282149
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            90
+                        ],
+                        "scale": [
+                            0.528449357,
+                            0.201183811,
+                            0.528449357
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.Wheel.Collider.Ft.R.01",
+                        "position": [
+                            0.856917,
+                            0.0136896046,
+                            -0.000178439979
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            90
+                        ],
+                        "scale": [
+                            0.528449357,
+                            0.201183811,
+                            0.528449357
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelCenter.Bk.L.01",
+                        "position": [
+                            -1.08785188,
+                            0.0188179314,
+                            -2.817096
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelCenter.Bk.R.01",
+                        "position": [
+                            1.08785152,
+                            0.0188179184,
+                            -2.81709552
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelCenter.Ft.L.01",
+                        "position": [
+                            -1.08769643,
+                            0.0136898635,
+                            -0.000178599439
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelCenter.Ft.R.01",
+                        "position": [
+                            1.08769619,
+                            0.0136897182,
+                            -0.00017856792
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelGround.Bk.L.01",
+                        "position": [
+                            -1.08785272,
+                            -0.505707443,
+                            -2.81709576
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelGround.Bk.R.01",
+                        "position": [
+                            1.08785,
+                            -0.505707562,
+                            -2.81709576
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelGround.Ft.L.01",
+                        "position": [
+                            -1.08769655,
+                            -0.510961354,
+                            -0.000178282149
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelGround.Ft.R.01",
+                        "position": [
+                            1.08769631,
+                            -0.510961533,
+                            -0.000178439979
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelInnerCenter.Bk.L.01",
+                        "position": [
+                            -0.856917,
+                            0.01881799,
+                            -2.81709576
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelInnerCenter.Bk.R.01",
+                        "position": [
+                            0.856917,
+                            0.0188179053,
+                            -2.81709576
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelInnerCenter.Ft.L.01",
+                        "position": [
+                            -0.8569171,
+                            0.0136897312,
+                            -0.000178282149
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelInnerCenter.Ft.R.01",
+                        "position": [
+                            0.856917,
+                            0.0136896046,
+                            -0.000178439979
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelWidth.Bk.L.01",
+                        "position": [
+                            -0.886784,
+                            -0.505707443,
+                            -2.81709576
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelWidth.Bk.R.01",
+                        "position": [
+                            0.88694,
+                            -0.505707562,
+                            -2.81709576
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelWidth.Ft.L.01",
+                        "position": [
+                            -0.886784,
+                            -0.510961354,
+                            -0.000178282149
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.WheelWidth.Ft.R.01",
+                        "position": [
+                            0.886784,
+                            -0.510961354,
+                            -0.000178282149
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty2.Wheel.Collider.Bk.L.01",
+                        "position": [
+                            -1.08785272,
+                            0.018817991,
+                            -2.81709576
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            90
+                        ],
+                        "scale": [
+                            0.528449357,
+                            0.201183811,
+                            0.528449357
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty2.Wheel.Collider.Bk.R.01",
+                        "position": [
+                            1.08785272,
+                            0.0188179035,
+                            -2.81709576
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            90
+                        ],
+                        "scale": [
+                            0.528449357,
+                            0.201183811,
+                            0.528449357
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty2.Wheel.Collider.Ft.L.01",
+                        "position": [
+                            -1.08769655,
+                            0.0136897312,
+                            -0.000178282149
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            90
+                        ],
+                        "scale": [
+                            0.528449357,
+                            0.201183811,
+                            0.528449357
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty2.Wheel.Collider.Ft.R.01",
+                        "position": [
+                            1.08769631,
+                            0.0136896037,
+                            -0.000178439979
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            90
+                        ],
+                        "scale": [
+                            0.528449357,
+                            0.201183811,
+                            0.528449357
+                        ]
                     }
                 }
             ]
