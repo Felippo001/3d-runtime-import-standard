@@ -1,1 +1,86 @@
-{"LookAtObjectName":"Empty.lookAt","ScriptedObjects":[{"objectName":"ROOT","scripts":[{"scriptName":"CreateEmptyObjectScript","scriptValues":{"emptyObjectName":"Empty.lookAt","position":[0.0,1.367,0.0]}}]}],"armStretch":0.05,"legStretch":0.05,"lowerArmTwist":0.5,"lowerLegTwist":0.5,"upperArmTwist":0.5,"upperLegTwist":0.5,"bones":{"Hips":{"boneName":"spine","useDefaultValues":true},"LeftUpperLeg":{"boneName":"thigh.L","useDefaultValues":true},"RightUpperLeg":{"boneName":"thigh.R","useDefaultValues":true},"LeftLowerLeg":{"boneName":"shin.L","useDefaultValues":true},"RightLowerLeg":{"boneName":"shin.R","useDefaultValues":true},"LeftFoot":{"boneName":"foot.L","useDefaultValues":true},"RightFoot":{"boneName":"foot.R","useDefaultValues":true},"Spine":{"boneName":"spine.001","useDefaultValues":true},"Neck":{"boneName":"spine.004","useDefaultValues":true},"Head":{"boneName":"spine.005","useDefaultValues":true},"LeftShoulder":{"boneName":"shoulder.L","useDefaultValues":true},"RightShoulder":{"boneName":"shoulder.R","useDefaultValues":true},"LeftUpperArm":{"boneName":"upper_arm.L","useDefaultValues":true},"RightUpperArm":{"boneName":"upper_arm.R","useDefaultValues":true},"LeftLowerArm":{"boneName":"forearm.L","useDefaultValues":true},"RightLowerArm":{"boneName":"forearm.R","useDefaultValues":true},"LeftHand":{"boneName":"hand.L","useDefaultValues":true},"RightHand":{"boneName":"hand.R","useDefaultValues":true},"LeftToes":{"boneName":"toe.L","useDefaultValues":true},"RightToes":{"boneName":"toe.R","useDefaultValues":true},"RightEye":{"boneName":"spine.006","useDefaultValues":true}}}
+{
+    "LookAtObjectName": "Empty.lookAt",
+    "ScriptedObjects": [
+        {
+            "objectName": "ROOT",
+            "scripts": [
+                {
+                    "scriptName": "CreateEmptyObjectScript",
+                    "scriptValues": {
+                        "emptyObjectName": "Empty.lookAt",
+                        "position": [
+                            0,
+                            1.367,
+                            0
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "bones": {
+        "Hips": {
+            "boneName": "spine"
+        },
+        "LeftUpperLeg": {
+            "boneName": "thigh.L"
+        },
+        "RightUpperLeg": {
+            "boneName": "thigh.R"
+        },
+        "LeftLowerLeg": {
+            "boneName": "shin.L"
+        },
+        "RightLowerLeg": {
+            "boneName": "shin.R"
+        },
+        "LeftFoot": {
+            "boneName": "foot.L"
+        },
+        "RightFoot": {
+            "boneName": "foot.R"
+        },
+        "Spine": {
+            "boneName": "spine.001"
+        },
+        "Neck": {
+            "boneName": "spine.004"
+        },
+        "Head": {
+            "boneName": "spine.005"
+        },
+        "LeftShoulder": {
+            "boneName": "shoulder.L"
+        },
+        "RightShoulder": {
+            "boneName": "shoulder.R"
+        },
+        "LeftUpperArm": {
+            "boneName": "upper_arm.L"
+        },
+        "RightUpperArm": {
+            "boneName": "upper_arm.R"
+        },
+        "LeftLowerArm": {
+            "boneName": "forearm.L"
+        },
+        "RightLowerArm": {
+            "boneName": "forearm.R"
+        },
+        "LeftHand": {
+            "boneName": "hand.L"
+        },
+        "RightHand": {
+            "boneName": "hand.R"
+        },
+        "LeftToes": {
+            "boneName": "toe.L"
+        },
+        "RightToes": {
+            "boneName": "toe.R"
+        },
+        "RightEye": {
+            "boneName": "spine.006"
+        }
+    }
+}
